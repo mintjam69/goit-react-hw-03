@@ -4,6 +4,7 @@ import SearchBox from "./SearchBox/SearchBox.jsx";
 import ContactForm from "./ContactForm/ContactForm.jsx";
 import { nanoid } from "nanoid";
 import "./App.css";
+import { FcContacts } from "react-icons/fc";
 
 const App = () => {
   // Ініціалізуємо стан контактів з даних у локальному сховищі або жорстко закодованих контактів
@@ -57,7 +58,11 @@ const App = () => {
 
   return (
     <div>
-      <h1 className="title">Phonebook</h1>
+      <div className="title-container">
+        <h1 className="title">Phonebook</h1>
+        <FcContacts className="icon" />
+      </div>
+
       <ContactForm addContact={handleAddContact} />
       <SearchBox setSearchUser={setFilter} />
       <ContactList

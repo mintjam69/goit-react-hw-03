@@ -51,10 +51,35 @@ address {
   padding: 20px;
 }
 
-.title {
+/* .title {
   margin: 40px 0 20px 0;
   font-weight: 600;
   text-align: center;
   font-size: 40px;
   color: rgb(20, 19, 19);
+} */
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* відстань між текстом і іконкою */
+  margin: 40px 0 20px 0;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 40px;
+  color: rgb(20, 19, 19);
+  margin: 0;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.title:hover,
+.title:focus {
+  background-color: #d934b3;
 }
